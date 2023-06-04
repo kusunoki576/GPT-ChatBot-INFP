@@ -29,7 +29,7 @@ def communicate():
 
 # ユーザーインターフェイスの構築
 st.title("INFP-ChatBot")
-st.write("GPT-3.5")
+st.write("GPT-3.5 / temperature==1.0")
 
 user_input = st.text_input("メッセージを入力", key="user_input", on_change=communicate)
 
