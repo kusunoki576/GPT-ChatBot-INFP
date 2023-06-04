@@ -36,8 +36,8 @@ user_input = st.text_input("メッセージを入力", key="user_input", on_chan
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
 
-    # for message in reversed(messages[1:]):  # 直近のメッセージを上に
-    for message in messages[1:]:
+    for message in reversed(messages[1:]):  # 直近のメッセージを上に
+    # for message in messages[1:]:
         speaker = "You"
         if message["role"] == "assistant":
             speaker = "GPT"
